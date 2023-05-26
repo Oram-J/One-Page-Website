@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>My NEW Car!</title>
-		<meta charset="utf-8">
-	</head>
+	
+<head>
+	<meta charset="utf-8">
+	<title>My New Car!</title>
+	<link rel="stylesheet" href="./css/shared.css">
+	<link rel="stylesheet" href="./css/animations.css">	
+</head>
+
 	<body>
 	
 	<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+	<div class="wrap">
+		<div class="menu-container">
+			<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
 					<a href="#contact"><li>RESERVATIONS</li></a>
@@ -20,8 +24,8 @@
 		
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div>
+			<div class="container">
+				<div class="text-center">
 					<span>My NEW Car!</span>
 				</div>
 			</div>
@@ -29,16 +33,16 @@
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
-		<section>
-				<div id="gallery">
-					<h1>Gallery</h1>
-					<div>
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
 						
 						<!-- PHOTO CONTAINER ! -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./images/thumb/thumbnail_1.jpg" alt="Drivers Side">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Driver's Side Profile.</p>
 								</div>
@@ -47,10 +51,10 @@
 						<!-- END PHOTO CONTAINER 1 -->
 						
 						<!-- PHOTO CONTAINER 2 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./images/thumb/thumbnail_2.jpg" alt="Front of Car">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Front of Car.</p>
 								</div>
@@ -59,10 +63,10 @@
 						<!-- END PHOTO CONTAINER 2 -->
 						
 						<!-- PHOTO CONTAINER 3 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./images/thumb/thumbnail_3.jpg" alt="Passengers Side">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Passenger's Side Front.</p>
 								</div>
@@ -71,10 +75,10 @@
 						<!-- END PHOTO CONTAINER 3 -->
 						
 						<!-- PHOTO CONTAINER 4 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./images/thumb/thumbnail_4.jpg" alt="View of Dash">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Older Stereo design with SYNC by Microsoft V1.</p>
 								</div>
@@ -83,10 +87,10 @@
 						<!-- END PHOTO CONTAINER 4 -->
 						
 						<!-- PHOTO CONTAINER 5 -->
-						<div>
-							<div>
+						<div class="photo-container">
+							<div class="photo">
 								<img src="./images/thumb/thumbnail_5.jpg" alt="Back of Car emblem with T-Rex">
-								<div>
+								<div class="photo-overlay">
 									<h3>Click to Enlarge</h3>
 									<p>Having a little fun with a Cricut!</p>
 								</div>
@@ -100,35 +104,37 @@
 		
 		<!-- BEGIN VIDEO -->
 			<div>
-				First song I played in my new car:
-			
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/THpt6ugy_8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<h3 align="center">First song I played in my new car:</h3>
+					<center>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/THpt6ugy_8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</center>
 		    </div>
 		<!-- END VIDEO -->
 		
 		<!-- RSVP -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div>
-						<h2><span>Your adventure in my car is just around the corner!</span>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
+						<h2>
+							<span>Your adventure in my car is just around the corner!</span>
 							<br />Reserve your ride today!
 						</h2>
-						<p>
+						<p class="rsvp-text">
 							Please provide us with your basic contact information.
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
-								<input class="rsvp" type="text" value="First Name">
-								<input class="rsvp" type="text" value="Last Name">
-								<input class="rsvp" type="text" value="Email Address">
-								<input class="rsvp" type="text" value="Phone Number">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
 								<div class="form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
-									<input type="submit" value="Submit">
+								<div class="submit">
+									<input type="submit" value="submit">
 								</div>
 							</form>
 						</div>
